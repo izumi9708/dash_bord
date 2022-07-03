@@ -176,13 +176,13 @@ $(function(){
 
     async function getGeo(id){
         let area = 'tokyo';
-        let response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${area}&limit=1&appid=83a388baa1e3740aa9f8a5db8040456c`);
+        let response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${area}&limit=1&appid=83a388baa1e3740aa9f8a5db8040456c`);
 
         return response.json(); 
     }
     
     async function getWeather(lat,lng){
-        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&APPID=83a388baa1e3740aa9f8a5db8040456c`);
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&APPID=83a388baa1e3740aa9f8a5db8040456c`);
     
         return response.json();
     }
